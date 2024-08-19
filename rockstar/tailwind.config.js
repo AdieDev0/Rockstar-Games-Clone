@@ -9,6 +9,9 @@ export default {
       colors: {
         Platinum: '#e8e8e8',
       },
+      fontFamily: {
+        Moderustic: ["Moderustic"],
+      }
     },
   },
   plugins: [],

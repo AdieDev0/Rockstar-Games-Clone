@@ -5,7 +5,8 @@ import { CgProfile } from "react-icons/cg";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import { IoMdArrowDropright } from "react-icons/io";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import Newswire from "./Shared/Newswire";
 
 const Nav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -13,8 +14,6 @@ const Nav = () => {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
-
-  const links = ["Games", "Newswire", "Videos", "Download", "Store", "Support"];
 
   return (
     <div className="bg-black text-white flex justify-between items-center py-7 h-20 px-10 lg:px-20 relative border-b border-zinc-800">
@@ -24,23 +23,36 @@ const Nav = () => {
         className="md:hidden lg:hidden cursor-pointer"
         aria-label="Toggle menu"
       >
-        {isMenuOpen ? (
-          <IoCloseOutline size={30} />
-        ) : (
-          <FiMenu size={30} />
-        )}
+        {isMenuOpen ? <IoCloseOutline size={30} /> : <FiMenu size={30} />}
       </button>
 
       {/* Logo */}
-      <img src={logo} alt="Logo" className="h-10 w-auto cursor-pointer" />
+      <Link to="/">
+        <img src={logo} alt="Logo" className="h-10 w-auto cursor-pointer" />
+      </Link>
 
       {/* Links for Desktop */}
       <div className="hidden md:flex lg:flex gap-10">
-        {links.map((link, index) => (
-          <p key={index} className="hover:text-[#fcaf17] cursor-pointer duration-300">
-            {link}
+        <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
+          Games
+        </p>
+        <Link to="/Newswire">
+          <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
+            Newswire
           </p>
-        ))}
+        </Link>
+        <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
+          Videos
+        </p>
+        <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
+          Download
+        </p>
+        <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
+          Store
+        </p>
+        <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
+          Support
+        </p>
       </div>
 
       {/* Right side icons and buttons */}
@@ -65,8 +77,11 @@ const Nav = () => {
             <div className="flex justify-between items-center">
               <p className="mt-6 mb-5">Games</p>
               <p className="text-xs uppercase cursor-pointer flex items-center">
-                <Link to="/" className="text-xs uppercase cursor-pointer flex items-center">
-                View All <IoMdArrowDropright size={20} />
+                <Link
+                  to="/"
+                  className="text-xs uppercase cursor-pointer flex items-center"
+                >
+                  View All <IoMdArrowDropright size={20} />
                 </Link>
               </p>
             </div>
@@ -91,11 +106,11 @@ const Nav = () => {
             </div>
 
             {/* Other links */}
-            {links.slice(1).map((link, index) => (
-              <p key={index} className="mt-6 cursor-pointer">
-                {link}
-              </p>
-            ))}
+            <p className="mt-6 cursor-pointer">Newswire</p>
+            <p className="mt-6 cursor-pointer">Videos</p>
+            <p className="mt-6 cursor-pointer">Download</p>
+            <p className="mt-6 cursor-pointer">Store</p>
+            <p className="mt-6 cursor-pointer">Support</p>
           </div>
 
           <button className="bg-[#fcaf17] text-black text-lg w-full h-12 rounded-md hover:bg-[#e0a114] font-semibold">

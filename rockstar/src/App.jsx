@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./Components/Nav";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
+import Newswire from "./Components/Shared/Newswire";
 
 const App = () => {
   return (
@@ -12,13 +13,16 @@ const App = () => {
 
       <Routes>
         {/* Define the route for the Hero component */}
-        <Route path="/" element={
-          <>
-          < Hero />
-          <Footer/>
-          </>
-        } 
-          />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/newswire" element={<Newswire />} />
 
         {/* Add other routes here as needed */}
       </Routes>
