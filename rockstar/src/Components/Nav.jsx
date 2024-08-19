@@ -45,7 +45,7 @@ const Nav = () => {
 
       {/* Right side icons and buttons */}
       <div className="flex items-center gap-5">
-        <button className="bg-[#fcaf17] text-black w-36 h-9 rounded-md hover:bg-[#e0a114] font-semibold hidden md:block lg:block">
+        <button className="bg-[#fcaf17] text-black w-36 h-9 rounded-md hover:bg-yellow-600 font-semibold hidden md:block lg:block duration-200">
           GET LAUNCHER
         </button>
 
