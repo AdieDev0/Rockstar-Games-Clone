@@ -7,6 +7,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { IoMdArrowDropright } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Newswire from "./Shared/Newswire";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 const Nav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -66,7 +67,44 @@ const Nav = () => {
             size={30}
             className="cursor-pointer hover:text-gray-300 hidden md:block lg:block"
           />
-          <CgProfile size={27} className="cursor-pointer hover:text-gray-300" />
+          {/* Drop Down Menu */}
+          <Menu>
+            <MenuButton>
+              <CgProfile
+                size={27}
+                className="cursor-pointer hover:text-gray-300"
+              />
+            </MenuButton>
+            <MenuItems
+              anchor="bottom"
+              className="bg-[#121212] text-white font-Moderustic border rounded-xl border-neutral-700 w-80 mt-7 ml-0 gap-y-9 text-sm"
+            >
+              <MenuItem>
+                <a
+                  className="block hover:bg-neutral-700 duration-500 border-b border-neutral-700 border- h-14 p-3"
+                  href="/"
+                >
+                  Sign In
+                </a>
+              </MenuItem>
+              <MenuItem>
+                <a
+                  className="block hover:bg-neutral-700 duration-500 border-b border-neutral-700 h-14 p-3"
+                  href="/"
+                >
+                  Sign Up
+                </a>
+              </MenuItem>
+              <MenuItem>
+                <a
+                  className="block hover:bg-neutral-700 duration-500 h-14 p-3"
+                  href="/"
+                >
+                  Help
+                </a>
+              </MenuItem>
+            </MenuItems>
+          </Menu>
         </div>
       </div>
 
@@ -107,7 +145,7 @@ const Nav = () => {
 
             {/* Other links */}
             <Link to="Newswire">
-            <p className="mt-6 cursor-pointer">Newswire</p>
+              <p className="mt-6 cursor-pointer">Newswire</p>
             </Link>
             <p className="mt-6 cursor-pointer">Videos</p>
             <p className="mt-6 cursor-pointer">Download</p>
