@@ -106,7 +106,9 @@ const Nav = () => {
             </div>
 
             {/* Other links */}
+            <Link to="Newswire">
             <p className="mt-6 cursor-pointer">Newswire</p>
+            </Link>
             <p className="mt-6 cursor-pointer">Videos</p>
             <p className="mt-6 cursor-pointer">Download</p>
             <p className="mt-6 cursor-pointer">Store</p>
