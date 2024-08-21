@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import logo from "../assets/NavLogo.png";
 import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
@@ -8,13 +9,27 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Newswire from "./Shared/Newswire";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
+import { FaCaretRight } from "react-icons/fa";
 
 const Nav = () => {
+  
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+
+  const [isDown, setIsDown] = useState(true);
+  
+  const toggleIcon = () => {
+    setIsDown(prevState => !prevState); // Toggles the state between true and false
+  };
+
+
+
+  
 
   return (
     <div className="bg-black text-white flex justify-between items-center py-7 h-20 px-10 lg:px-20 relative border-b border-zinc-800">
@@ -34,9 +49,30 @@ const Nav = () => {
 
       {/* Links for Desktop */}
       <div className="hidden md:flex lg:flex gap-10">
-        <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
-          Games
-        </p>
+        <Popover>
+          <PopoverButton className="hover:text-[#fcaf17] cursor-pointer duration-300 flex gap-1" onClick={toggleIcon}>
+            Games {isDown ? <FaAngleDown className="animate-bounce relative top-1 size-4" /> : <FaAngleUp className="relative top-1 size-4" />}
+          </PopoverButton>
+          <PopoverPanel
+            transition
+            anchor="bottom"
+            className="divide-y divide-white/5 bg-[#121212] text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0 mt-7"
+          >
+            <div className="px-20 py-14 w-screen">
+              <div className="text-white flex justify-between font-Moderustic font-semibold mb-5">
+                <p className="text-3xl">Features Games</p>
+                <p className="text-xl gap-1 flex cursor-pointer">VIEW ALL <FaCaretRight className="relative size-7" /></p>
+              </div>
+              <div className="flex gap-8">
+                <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ccac790d960f612fa0746c78b8052926.jpg?im=Resize=640" alt="/" className="w-[250px] border border-zinc-800 rounded-md object-cover" />
+                <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg?im=Resize=640" alt="/" className="w-[250px] border border-zinc-800 rounded-md object-cover" />
+                <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/214a1cd1a2e7bb8f9b1e5d3846ca2993.jpg?im=Resize=640" alt="/" className="w-[250px] border border-zinc-800 rounded-md object-cover" />
+                <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/082b847bcab37655faf903149f80f1e4.jpg?im=Resize=640" alt="/" className="w-[250px] border border-zinc-800 rounded-md object-cover" />
+                <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dbc01cf29aa31b9d15a5d06483a0a1a3.jpg?im=Resize=640" alt="/" className="w-[250px] border border-zinc-800 rounded-md object-cover" />
+              </div>
+            </div>
+          </PopoverPanel>
+        </Popover>
         <Link to="/Newswire">
           <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
             Newswire
@@ -76,8 +112,9 @@ const Nav = () => {
               />
             </MenuButton>
             <MenuItems
+              transition
               anchor="bottom"
-              className="bg-[#121212] text-white font-Moderustic border rounded-xl border-neutral-700 w-80 mt-7 ml-0 gap-y-9 text-sm"
+              className="bg-[#121212] text-white font-Moderustic border rounded-xl  border-neutral-700 w-80 mt-7 gap-y-9 text-sm transition duration-200 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
             >
               <MenuItem>
                 <a
