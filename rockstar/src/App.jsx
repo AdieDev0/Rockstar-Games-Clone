@@ -5,6 +5,7 @@ import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import Newswire from "./Components/Shared/Newswire";
 import Download from "./Components/Shared/Download";
+import Videos from "./Components/Shared/Videos";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         />
         <Route path="/newswire" element={<Newswire />} />
         <Route path="/Download" element={<Download />} />
+        <Route path="/Videos" element={<Videos />} />
 
         {/* Add other routes here as needed */}
       </Routes>

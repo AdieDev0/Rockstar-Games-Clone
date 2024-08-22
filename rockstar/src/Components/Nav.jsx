@@ -27,10 +27,6 @@ const Nav = () => {
     setIsDown(prevState => !prevState); // Toggles the state between true and false
   };
 
-
-
-  
-
   return (
     <div className="bg-black text-white flex items-center py-7 h-20 px-10 lg:px-20 relative border-b border-zinc-800 justify-between">
       {/* Menu or Close Button */}
@@ -78,9 +74,11 @@ const Nav = () => {
             Newswire
           </p>
         </Link>
+        <Link to="/Videos">
         <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
           Videos
         </p>
+        </Link>
         <Link to="Download" className="hover:text-[#fcaf17] cursor-pointer duration-300">
           Download
         </Link>
