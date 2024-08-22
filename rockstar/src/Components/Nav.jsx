@@ -32,7 +32,7 @@ const Nav = () => {
   
 
   return (
-    <div className="bg-black text-white flex justify-between items-center py-7 h-20 px-10 lg:px-20 relative border-b border-zinc-800">
+    <div className="bg-black text-white flex items-center py-7 h-20 px-10 lg:px-20 relative border-b border-zinc-800 justify-between">
       {/* Menu or Close Button */}
       <button
         onClick={toggleMenu}
@@ -48,7 +48,7 @@ const Nav = () => {
       </Link>
 
       {/* Links for Desktop */}
-      <div className="hidden md:flex lg:flex gap-10">
+      <div className="hidden md:flex lg:flex gap-10 ">
         <Popover>
           <PopoverButton className="hover:text-[#fcaf17] cursor-pointer duration-300 flex gap-1" onClick={toggleIcon}>
             Games {isDown ? <FaAngleDown className="animate-bounce relative top-1 size-4" /> : <FaAngleUp className="relative top-1 size-4" />}
@@ -81,9 +81,9 @@ const Nav = () => {
         <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
           Videos
         </p>
-        <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
+        <Link to="Download" className="hover:text-[#fcaf17] cursor-pointer duration-300">
           Download
-        </p>
+        </Link>
         <p className="hover:text-[#fcaf17] cursor-pointer duration-300">
           Store
         </p>
@@ -185,7 +185,9 @@ const Nav = () => {
               <p className="mt-6 cursor-pointer">Newswire</p>
             </Link>
             <p className="mt-6 cursor-pointer">Videos</p>
+            <Link to="Download">
             <p className="mt-6 cursor-pointer">Download</p>
+            </Link>
             <p className="mt-6 cursor-pointer">Store</p>
             <p className="mt-6 cursor-pointer">Support</p>
           </div>
