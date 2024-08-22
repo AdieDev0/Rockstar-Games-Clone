@@ -110,7 +110,7 @@ const Download = () => {
                     </p>
                     <FaChevronDown className="size-5 fill-white/90 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="absolute text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150 rounded-b-lg">
+                  <DisclosurePanel className="absolute  backdrop-blur-lg text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150 rounded-b-lg">
                     Rockstar (PC)
                   </DisclosurePanel>
                 </Disclosure>
@@ -129,7 +129,7 @@ const Download = () => {
                     </p>
                     <FaChevronDown className="size-5 fill-white/90 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="absolute text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150 rounded-b-lg">
+                  <DisclosurePanel className="absolute  backdrop-blur-lg text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150 rounded-b-lg">
                     Rockstar (PC)
                   </DisclosurePanel>
                 </Disclosure>
@@ -151,7 +151,7 @@ const Download = () => {
                     </p>
                     <FaChevronDown className="size-5 fill-white/90 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="absolute">
+                  <DisclosurePanel className="absolute backdrop-blur-lg mt-2">
                     <DisclosurePanel className="text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150">
                       Rockstar (PC)
                     </DisclosurePanel>
@@ -178,7 +178,7 @@ const Download = () => {
                     </p>
                     <FaChevronDown className="size-5 fill-white/90 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="absolute">
+                  <DisclosurePanel className="absolute backdrop-blur-xl mt-2">
                     <DisclosurePanel className="text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150">
                       Rockstar (PC)
                     </DisclosurePanel>
@@ -203,7 +203,7 @@ const Download = () => {
             </div>
           </div>
           {/* Mobiles Games And App */}
-          <p className=" lg:text-3xl text-2xl mt-60 font-bold">
+          <p className=" lg:text-3xl text-2xl mt-40 font-bold">
             PC & Mac Games
           </p>
           <div className="mt-16 flex lg:flex-row flex-col gap-10">
@@ -241,7 +241,7 @@ const Download = () => {
                     </p>
                     <FaChevronDown className="size-5 fill-white/90 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="absolute">
+                  <DisclosurePanel className="absolute mt-2 backdrop-blur-lg">
                     <DisclosurePanel className="text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150 rounded-b-lg">
                       IOS
                     </DisclosurePanel>
@@ -268,9 +268,9 @@ const Download = () => {
                     </p>
                     <FaChevronDown className="size-5 fill-white/90 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="absolute">
+                  <DisclosurePanel className="absolute mt-2 backdrop-blur-lg">
                     <DisclosurePanel className="text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150">
-                      Ios
+                      IOS
                     </DisclosurePanel>
                     <DisclosurePanel className="text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150">
                       Android
@@ -295,7 +295,7 @@ const Download = () => {
                     </p>
                     <FaChevronDown className="size-5 fill-white/90 group-data-[hover]:fill-white/50 group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="absolute">
+                  <DisclosurePanel className="absolute backdrop-blur-lg mt-2">
                     <DisclosurePanel className="text-xl mt-2 py-2 text-white/60 hover:text-black hover:bg-[#fcaf17] duration-150">
                       IOS
                     </DisclosurePanel>
