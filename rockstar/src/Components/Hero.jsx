@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-[#0b0b0b] text-white h-auto px-7 py-10 lg:px-20 lg:py-20 overflow-hidden">
+    <div className="bg-[#0b0b0b] text-white h-auto px-7 py-10 lg:px-20 lg:pt-20 overflow-hidden">
       {/* desktop and mobile */}
       <div>
         <img
