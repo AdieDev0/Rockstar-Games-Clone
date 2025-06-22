@@ -56,24 +56,6 @@ const Newswire = () => {
       date: "July 4, 2024",
       desc: "Paint the Town Red, White, and Blue With GTA Online Independence Day Bonuses",
     },
-    {
-      img: "",
-      title: "",
-      date: "",
-      desc: "",
-    },
-    {
-      img: "",
-      title: "",
-      date: "",
-      desc: "",
-    },
-    {
-      img: "",
-      title: "",
-      date: "",
-      desc: "",
-    },
   ];
 
   return (
@@ -103,8 +85,8 @@ const Newswire = () => {
       {/* Cards desktop */}
 
       <div>
-        <div className="lg:px-20 lg:pt-28 lg:mb-7 flex flex-col lg:flex-row gap-7 pt-20 px-10">
-          <div className="grid grid-cols-3 gap-10 mx-auto justify-center items-center">
+        <div className="pt-20 px-10 lg:px-20 lg:pt-28 lg:mb-7 flex flex-col lg:flex-row mx-auto gap-7 ">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 justify-center items-center">
             {gridCards.map((cards, index) => (
               <div key={index}>
                 <img
@@ -112,12 +94,14 @@ const Newswire = () => {
                   alt=""
                   className="object-cover rounded-t-xl"
                 />
-                <div className="border border-zinc-800  rounded-xl bg-black">
+                <div className="border-b border-l border-r p-2 lg:p-10 border-zinc-800  rounded-b-xl bg-black">
                   <p className="font-semibold text-xs lg:text-base">
                     {cards.title}
-                    <span className="text-zinc-400 ml-2">{cards.date}</span>
+                    <span className="text-zinc-400 text-xs lg:text-base  ml-2">
+                      {cards.date}
+                    </span>
                   </p>
-                  <p className="lg:text-2xl text-xl mt-2 font-semibold">
+                  <p className="text-xs sm:text-sm md:text-md lg:text-2xl xl:text-3xl mt-2 font-semibold">
                     {cards.desc}
                   </p>
                 </div>
