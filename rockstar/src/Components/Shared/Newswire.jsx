@@ -1,6 +1,81 @@
 import Footer from "../Footer";
 
 const Newswire = () => {
+  const gridCards = [
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9kk7aoaaaaa727/0eceeac62c671cdc52792e171e4002a5c4fa18e2.jpg",
+      title: "GTA Online",
+      date: "Aug 8, 2024",
+      desc: "Lock Up Bounty Targets to Boost Bottom Dollar’s Bottom Line",
+    },
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o337151o33aa79/f5530c00d1a7ee3a4ab61a51b07aa15a4fa42745.jpg",
+      title: "GTA Online",
+      date: "Aug 1, 2024",
+      desc: "The New Benefactor Vorschlaghammer Sedan: Free with GTA+",
+    },
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o3372758858k97/2f860b6305fd1f2bd188f528575dccaac6693dcd.jpg",
+      title: "GTA Online",
+      date: "Aug 1, 2024",
+      desc: "New Benefactor Vorschlaghammer Slides into the Los Santos Drift Racing Scene",
+    },
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/akk253717o8295/8489cb618b476355758437834d03efa1e8688678.jpg",
+      title: "Red Dead Online",
+      date: "July 30, 2024",
+      desc: "Explore Parts Unknown to Earn Collector Bonuses Including Triple Rewards on Collectible Set Sales",
+    },
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/1773a1o975k491/68a5787fdbd59cb6f4b9548dd7ee730bc7a9828e.jpg",
+      title: "Rockstar Games",
+      date: "July 24, 2024",
+      desc: "CircoLoco Presents Mochakk’s Locomotiva Ibiza 2099 I EP",
+    },
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/3997o81a1o4k25/6d67a3661b840442f2ac56adaed5faacd0549dae.jpg",
+      title: "GTA Online",
+      date: "July 25, 2024",
+      desc: "Dish Out Pies for Cash in New Pizza Deliveries and Join the Pizza Delivery Community Challenge",
+    },
+     {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/511ko1133811a1/835b7afb70dc05c5f4e72c57cdcccb5fc6db1750.jpg",
+      title: "GTA Online",
+      date: "June 25, 2024",
+      desc: "Get More in GTA Online: Bottom Dollar Bounties With GTA+ Membership",
+    },
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/3993oka7ao372o/71558a01503fc6b1ce1fc2b35779bcda63886547.jpg",
+      title: "Red Dead Online",
+      date: "July 2, 2024",
+      desc: "Naturalists Earn Triple Rewards and Bonuses for Sampling Wildlife and Taking Part in Naturalist Free Roam Events",
+    },
+    {
+      img: "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o33a28177oa43a/4b4213d95ff59ea812c3fdb22572f79d783246a5.jpg",
+      title: "GTA Online",
+      date: "July 4, 2024",
+      desc: "Paint the Town Red, White, and Blue With GTA Online Independence Day Bonuses",
+    },
+     {
+      img: "",
+      title: "",
+      date: "",
+      desc: "",
+    },
+    {
+      img: "",
+      title: "",
+      date: "",
+      desc: "",
+    },
+    {
+      img: "",
+      title: "",
+      date: "",
+      desc: "",
+    },
+  ];
+
   return (
     <div className="bg-[#0b0b0b] h-auto text-white max-w-auto font-Moderustic">
       {/* Upper */}
@@ -31,58 +106,36 @@ const Newswire = () => {
         <div className="lg:px-20 lg:pt-28 lg:mb-7 flex flex-col lg:flex-row gap-7 pt-20 px-10">
           <div className="flex justify-center items-center">
             <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-              <img
-                src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/9kk7aoaaaaa727/0eceeac62c671cdc52792e171e4002a5c4fa18e2.jpg"
-                alt=""
-                className="object-cover"
-              />
+              <img src="" alt="" className="object-cover" />
               <div className="p-7 my-5 ">
                 <p className="font-semibold text-xs lg:text-base">
-                  GTA Online
-                  <span className="text-zinc-400 ml-2">Aug 8, 2024</span>
+                  <span className="text-zinc-400 ml-2"></span>
                 </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                  Lock Up Bounty Targets to Boost Bottom Dollar’s Bottom Line
-                </p>
+                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
             <div className="border border-zinc-800 lg:w-[420px] w-[300px] rounded-xl bg-black">
-              <img
-                src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o337151o33aa79/f5530c00d1a7ee3a4ab61a51b07aa15a4fa42745.jpg"
-                alt=""
-                className="object-cover rounded-t-xl"
-              />
+              <img src="" alt="" className="object-cover rounded-t-xl" />
               <div className="p-7 my-3 ">
                 <p className="font-semibold text-xs lg:text-base">
-                  GTA Online
-                  <span className="text-zinc-400 ml-2">Aug 1, 2024</span>
+                  <span className="text-zinc-400 ml-2"></span>
                 </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                  The New Benefactor Vorschlaghammer Sedan: Free with GTA+
-                </p>
+                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
             <div className="border border-zinc-800 lg:w-[430px] w-[300px] bg-black rounded-xl">
-              <img
-                src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o3372758858k97/2f860b6305fd1f2bd188f528575dccaac6693dcd.jpg"
-                alt=""
-                className="object-cover rounded-t-xl"
-              />
+              <img src="" alt="" className="object-cover rounded-t-xl" />
               <div className="p-7 my-2 ">
                 <p className="font-semibold text-xs lg:text-base">
-                  GTA Online
-                  <span className="text-zinc-400 ml-2">Aug 1, 2024</span>
+                  <span className="text-zinc-400 ml-2"></span>
                 </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                  New Benefactor Vorschlaghammer Slides into the Los Santos
-                  Drift Racing Scene
-                </p>
+                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
               </div>
             </div>
           </div>
@@ -93,18 +146,17 @@ const Newswire = () => {
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
             <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
               <img
-                src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/akk253717o8295/8489cb618b476355758437834d03efa1e8688678.jpg"
+                src=""
                 alt=""
                 className="object-cover rounded-xl"
               />
               <div className="p-7 my-5 ">
                 <p className="font-semibold text-xs lg:text-base">
-                  Red Dead Online
-                  <span className="text-zinc-400 ml-2">July 30, 2024</span>
+     
+                  <span className="text-zinc-400 ml-2"></span>
                 </p>
                 <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                  Explore Parts Unknown to Earn Collector Bonuses Including
-                  Triple Rewards on Collectible Set Sales
+   
                 </p>
               </div>
             </div>
@@ -112,17 +164,17 @@ const Newswire = () => {
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
             <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
               <img
-                src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/1773a1o975k491/68a5787fdbd59cb6f4b9548dd7ee730bc7a9828e.jpg"
+                src=""
                 alt=""
                 className="object-cover rounded-xl"
               />
               <div className="p-7 my-5 pb-0 lg:pb-24">
                 <p className="font-semibold text-xs lg:text-base">
-                  Rockstar Games
-                  <span className="text-zinc-400 ml-2">July 24, 2024</span>
+   
+                  <span className="text-zinc-400 ml-2"></span>
                 </p>
                 <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                  CircoLoco Presents Mochakk’s Locomotiva Ibiza 2099 I EP
+      
                 </p>
               </div>
             </div>
@@ -130,18 +182,17 @@ const Newswire = () => {
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
             <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
               <img
-                src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/3997o81a1o4k25/6d67a3661b840442f2ac56adaed5faacd0549dae.jpg"
+                src=""
                 alt=""
                 className="object-cover rounded-xl"
               />
               <div className="p-7 my-5 ">
                 <p className="font-semibold text-xs lg:text-base">
-                  GTA Online
-                  <span className="text-zinc-400 ml-2">July 25, 2024</span>
+         
+                  <span className="text-zinc-400 ml-2"></span>
                 </p>
                 <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                  Dish Out Pies for Cash in New Pizza Deliveries and Join the
-                  Pizza Delivery Community Challenge
+   
                 </p>
               </div>
             </div>
@@ -152,60 +203,57 @@ const Newswire = () => {
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
             <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
               <img
-                src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/511ko1133811a1/835b7afb70dc05c5f4e72c57cdcccb5fc6db1750.jpg"
+                src=""
                 alt=""
                 className="object-cover rounded-xl"
               />
               <div className="p-7 my-5">
                 <p className="font-semibold text-xs lg:text-base">
-                  GTA Online
-                  <span className="text-zinc-400 ml-2">June 25, 2024</span>
+  
+                  <span className="text-zinc-400 ml-2"></span>
                 </p>
                 <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                  Get More in GTA Online: Bottom Dollar Bounties With GTA+
-                  Membership
+           
                 </p>
               </div>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-          <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-            <img
-              src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/3993oka7ao372o/71558a01503fc6b1ce1fc2b35779bcda63886547.jpg"
-              alt=""
-              className="object-cover rounded-xl"
-            />
-            <div className="p-7 my-1 ">
-              <p className="font-semibold text-xs lg:text-base">
-                Red Dead Online
-                <span className="text-zinc-400 ml-2">July 2, 2024</span>
-              </p>
-              <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                Naturalists Earn Triple Rewards and Bonuses for Sampling
-                Wildlife and Taking Part in Naturalist Free Roam Events
-              </p>
+            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
+              <img
+                src=""
+                alt=""
+                className="object-cover rounded-xl"
+              />
+              <div className="p-7 my-1 ">
+                <p className="font-semibold text-xs lg:text-base">
+     
+                  <span className="text-zinc-400 ml-2"></span>
+                </p>
+                <p className="lg:text-2xl text-xl mt-2 font-semibold">
+     
+                </p>
+              </div>
             </div>
-          </div>
           </div>
 
           <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-          <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-            <img
-              src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o33a28177oa43a/4b4213d95ff59ea812c3fdb22572f79d783246a5.jpg"
-              alt=""
-              className="object-cover rounded-xl"
-            />
-            <div className="p-7 my-5 ">
-              <p className="font-semibold text-xs lg:text-base">
-                GTA Online
-                <span className="text-zinc-400 ml-2">July 4, 2024</span>
-              </p>
-              <p className="lg:text-2xl text-xl mt-2 font-semibold">
-                Paint the Town Red, White, and Blue With GTA Online Independence
-                Day Bonuses
-              </p>
+            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
+              <img
+                src=""
+                alt=""
+                className="object-cover rounded-xl"
+              />
+              <div className="p-7 my-5 ">
+                <p className="font-semibold text-xs lg:text-base">
+         
+                  <span className="text-zinc-400 ml-2"></span>
+                </p>
+                <p className="lg:text-2xl text-xl mt-2 font-semibold">
+             
+                </p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
