@@ -107,8 +107,12 @@ const Newswire = () => {
           <div className="grid grid-cols-3 gap-10 mx-auto justify-center items-center">
             {gridCards.map((cards, index) => (
               <div key={index}>
-                <img src={cards.img} alt="" className="object-cover" />
-                <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
+                <img
+                  src={cards.img}
+                  alt=""
+                  className="object-cover rounded-t-xl"
+                />
+                <div className="border border-zinc-800  rounded-xl bg-black">
                   <p className="font-semibold text-xs lg:text-base">
                     {cards.title}
                     <span className="text-zinc-400 ml-2">{cards.date}</span>
@@ -119,120 +123,6 @@ const Newswire = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="mb-40">
-        <div className="">
-          <div className="flex ">
-            <div className="">
-              <img src="" alt="" className="" />
-              <div className="p-7 my-5 ">
-                <p className="">
-                  <span className=""></span>
-                </p>
-                <p className=""></p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[420px] w-[300px] rounded-xl bg-black">
-              <img src="" alt="" className="object-cover rounded-t-xl" />
-              <div className="p-7 my-3 ">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className=""></p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[430px] w-[300px] bg-black rounded-xl">
-              <img src="" alt="" className="object-cover rounded-t-xl" />
-              <div className="p-7 my-2 ">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* 2 */}
-        <div className="lg:px-20 pt-2 lg:mb-7 flex flex-col lg:flex-row gap-7 mt-5 px-10">
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-              <img src="" alt="" className="object-cover rounded-xl" />
-              <div className="p-7 my-5 ">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-              <img src="" alt="" className="object-cover rounded-xl" />
-              <div className="p-7 my-5 pb-0 lg:pb-24">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-              <img src="" alt="" className="object-cover rounded-xl" />
-              <div className="p-7 my-5 ">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* 3 */}
-        <div className="lg:px-20 lg:mb-7 flex flex-col lg:flex-row gap-7 pt-7 px-10">
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-              <img src="" alt="" className="object-cover rounded-xl" />
-              <div className="p-7 my-5">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-              <img src="" alt="" className="object-cover rounded-xl" />
-              <div className="p-7 my-1 ">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start justify-center items-center">
-            <div className="border border-zinc-800 lg:w-[430px] w-[300px] rounded-xl bg-black">
-              <img src="" alt="" className="object-cover rounded-xl" />
-              <div className="p-7 my-5 ">
-                <p className="font-semibold text-xs lg:text-base">
-                  <span className="text-zinc-400 ml-2"></span>
-                </p>
-                <p className="lg:text-2xl text-xl mt-2 font-semibold"></p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
